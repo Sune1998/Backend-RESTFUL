@@ -1,0 +1,17 @@
+{
+    "room1": 
+        {
+            "NumOfP":"1", 
+            "type": "Royal"
+        },
+
+        "room2" :{
+            "NumOfP": "3",
+            "type": "basic"
+        },
+
+        "room3" :{
+            "NumofP": "28",
+            "type": "paty-suite"
+        }
+    }

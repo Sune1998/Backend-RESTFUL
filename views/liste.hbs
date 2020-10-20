@@ -1,8 +1,8 @@
 <select id="myselect" onchange="change_myselect(this.value)">
 <option value=""> Choose an option:</option>
-<option value="cars">Cars</option>
+<option value="rooms">rooms</option>
 <option value="users">users</option>
-<option value="bookings">bookings</option>
+<option value="booking">bookings</option>
 </select>
 
 <p id ="demo"></p>
@@ -23,8 +23,7 @@
                     txt += "<table border='1'>"
 
                     let element = myObj[sel][i]
-                    text += "<tr><td>Name</td><td>" + element.name + "</td></tr>"
-                    text += "<tr><td>Color</td><td>" + element.color + "</td></tr>
+                    text += "<tr><td>NumOfP</td><td>" + element.NumOfP + "</td></tr>"
                     text += "<tr><td>Type</td><td>" + element.type + "</td></tr>
 
                     txt += "</table><br>"
@@ -46,7 +45,7 @@
                     text += "<tr><td>Date</td><td>" + element.date + "</td></tr>"
                     text += "<tr><td>Time</td><td>" + element.time + "</td></tr>
                     text += "<tr><td>User</td><td>" + element.user + "</td></tr>
-                    text += "<tr><td>Car</td><td>" + element.car + "</td></tr>
+                    text += "<tr><td>room</td><td>" + element.room + "</td></tr>
 
                     txt += "</table><br>"
                 }

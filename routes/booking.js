@@ -3,7 +3,7 @@ var fs = require('fs')
 var router = express.Router()
 
 router.get('/', function(req, res, next){
-    res.render('lease', {title: 'Leasing'})
+    res.render('booking', {title: 'booking'})
 })
 
 router.post('/sucess', function(req, res, next){
@@ -13,11 +13,10 @@ router.post('/sucess', function(req, res, next){
             return
         }
         let json = JSON.parse(data)
-        let name = req.body.name
-        let color = req.body.color
+        let NumOfP = req.body.NumOfP
         let type = req.body.type
 
-        json.cars.push({"name": name, "color": color, "type": type})
+        json.cars.push({"NumOfP": NumOfP, "type": type})
 
         fs.writeFile("./public/data/combined.json", JSON.stringify(json, null, 4), function(err){
             if(err){
